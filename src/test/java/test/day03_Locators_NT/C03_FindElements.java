@@ -24,17 +24,14 @@ public class C03_FindElements {
         Bu webelementlerin sayısına ulaşmak için ya da bu web elementlerin yazısını konsola yazdırabilmek için
         List<Webelement> linklerLlistesi=driver.findelements(By.locator("locator değeri")) olarak kullanırız.
         Oluşturmuş olduğumuz List'i loop ile konsola yazdırabiliriz.
-         */
+        */
         List<WebElement> LinklerListesi = driver.findElements(By.tagName("a"));
         System.out.println("Linklerin Sayısı= " + LinklerListesi.size());
         /*
         for (WebElement w : LinklerListesi) {
-
             if (!w.getText().isEmpty()) {
                 System.out.println(w.getText());
-
             }
-
         }
 
          */

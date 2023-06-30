@@ -21,9 +21,10 @@ public class C03 {
 
         //Sayfayi simge durumuna getirin
         driver.manage().window().minimize();
-        Thread.sleep(2000);
+
 
         //simge durumunda 3 saniye bekleyip sayfayi maximize yapin
+        Thread.sleep(2000);
         driver.manage().window().maximize();
 
         //Sayfanin konumunu ve boyutlarini maximize durumunda yazdirin

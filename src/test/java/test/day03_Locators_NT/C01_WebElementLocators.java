@@ -33,10 +33,8 @@ public class C01_WebElementLocators {
 
         driver.findElement(By.id("twotabsearchtextbox")).sendKeys("iphone"+ Keys.ENTER);
 
-
       //Sayfayı kapatalım
         driver.close();
-
 
     }
 }

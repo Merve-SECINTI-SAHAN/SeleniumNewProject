@@ -60,7 +60,7 @@ public class C06 {
 
 
 
-          //      Sayfa URL'sinin https://www.amazon.com/ olup olmadığını doğrulayın, degilse doğru URL'yi yazdırın
+          // Sayfa URL'sinin https://www.amazon.com/ olup olmadığını doğrulayın, degilse doğru URL'yi yazdırın
 
         String actualURLAmazon= driver.getCurrentUrl();
         String expectedUrlAmazon = "https://www.amazon.com/";

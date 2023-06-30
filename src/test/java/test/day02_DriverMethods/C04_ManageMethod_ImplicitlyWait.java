@@ -28,11 +28,33 @@ public class C04_ManageMethod_ImplicitlyWait {
          */
 
          //techproed sayfasina gidelim
+        driver.get("https://techproeducation.com");
+
         //amazona gidelim
+        driver.get("https://amazon.com");
 
         //techpro sayfasina geri donelim
-        // ayfa basligini techpro icerdigini test edelim
+        driver.navigate().back();
+
+
+        // sayfa basligini techpro icerdigini test edelim
+        String actualTitleTechpro= driver.getTitle();
+        String expectedTitleTechpro="techpro";
+        if (actualTitleTechpro.contains(expectedTitleTechpro)){
+            System.out.println("Test PASSED");
+        } else
+            System.out.println("Test FAILED" + actualTitleTechpro);
+
+
         // tekrar amazon sayfasina gidelim sayfa basligini Amazon icerdigini test edelim
+        driver.navigate().forward();
+
+        String actualTitleAmazon= driver.getTitle();
+        String expectedTitleAmazon="techpro";
+        if (actualTitleAmazon.contains(expectedTitleAmazon)){
+            System.out.println("Test PASSED");
+        } else
+            System.out.println("Test FAILED" + actualTitleAmazon);
 
 
 

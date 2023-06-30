@@ -28,6 +28,12 @@ public class C01_getTagName_getAttributeName {
 
 
       // 3- arama kutusunun name attribute'nun degerinin field-keywords oldugunu test edin
+
+         /*
+            <input type="text" id="twotabsearchtextbox" value="" name="field-keywords" autocomplete="off"
+            placeholder="Search Amazon" class="nav-input nav-progressive-attribute" dir="auto"
+            tabindex="0" aria-label="Search Amazon" spellcheck="false">
+             */
         String actualAttributeName= aramaKutusu.getAttribute("name");
         System.out.println(actualAttributeName);
         String expectedAttributeName= "field-keywords";
