@@ -34,12 +34,23 @@ public class Odev {
         }
         System.out.println(actualTitle);
 
-
         //Carrer Opportunities In QA linkinin görünür ve erişilebilir olduğunu doğrulayalım
-
+WebElement linkGorunEris= driver.findElement(By.xpath("//a[normalize-space()='Career Opportunities In QA']"));
+        System.out.println(linkGorunEris.isDisplayed());
+        System.out.println(linkGorunEris.isEnabled());
 
         //Carrer Opportunities In QA linkine tıklayalım
+        WebElement linkGorunEris2= driver.findElement(By.xpath("//a[normalize-space()='Career Opportunities In QA']"));
+linkGorunEris2.click();
+
         //Başlığın Opportunities içerdiğini test edelim
+        String actualTitle2= driver.getTitle();
+        String expectedTitle2= "Opportunities";
+        if (actualTitle.contains(expectedTitle2)){
+            System.out.println("Test PASSED");
+        } else System.out.println(actualTitle2);
+
+
         //Tekrar anasayfaya dönelim ve url'in https://techproeducation.com/ olduğunu doğrulayalım
 
 
